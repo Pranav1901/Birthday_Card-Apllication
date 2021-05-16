@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         val nameInput : EditText =findViewById(R.id.nameInput)
         val name = nameInput.text.toString()
 //        Toast.makeText(this,"Hello $name",Toast.LENGTH_LONG).show()
-        val intent = Intent(this,BirthdayGreetingAcitvty::class.java)
-        intent.putExtra(BirthdayGreetingAcitvty.NAME_EXTRA,name)
-        startActivity(intent)
+        val intent = Intent(this,BirthdayGreetingAcitvty::class.java)     //call the activity of intent
+        intent.putExtra(BirthdayGreetingAcitvty.NAME_EXTRA,name)    //what to send with intent
+        startActivity(intent)                                       //
 
     }
 }
